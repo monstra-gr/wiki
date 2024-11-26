@@ -1,4 +1,3 @@
-# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 site_name: Wiki Monstra
 site_url: https://localhost
 
@@ -10,14 +9,12 @@ theme:
   logo: assets/icon_70.png
   name: material
   palette:
-    # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
       toggle:
         icon: material/brightness-auto
         name: Switch to light mode
       primary: blue grey
 
-    # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       toggle:
@@ -25,7 +22,6 @@ theme:
         name: Switch to dark mode
       primary: blue grey
 
-    # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
@@ -35,20 +31,16 @@ theme:
 
   features:
     - toc.follow
-    # Navigation <---------------------
     - navigation.expand
     - navigation.tabs
     - navigation.instant
     - naigation.indexes
     - navigation.instant.progress
     - navigation.tracking
-    # -------------------------------->
 
-    # Search <----------------
     - search.suggest
     - search.highlight
     - search.share
-    # -------------------------------->
 
 markdown_extensions:
   - admonition
