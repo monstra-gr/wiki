@@ -3,7 +3,6 @@ site_name: Wiki Monstra
 site_url: https://localhost
 
 plugins:
-  - mkdocs-audio
   - search
 
 theme:
