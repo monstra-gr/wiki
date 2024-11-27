@@ -48,5 +48,9 @@ markdown_extensions:
   - pymdownx.superfences
 
 nav:
-  - Home: 
-    - Intro: index.md
+  - Home: index.md
+  - Onboarding: onboarding/intro.md
+  - Politicas: politicas/intro.md
+  - Manuais: manual/intro.md
+  - Metodos: metodos/intro.md
+  - Wiki: database/intro.md
