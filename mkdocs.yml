@@ -5,6 +5,7 @@ plugins:
   - search
 
 theme:
+  custom_dir: docs/.overrides
   language: pt-BR
   logo: assets/icon_70.png
   name: material
@@ -37,7 +38,6 @@ theme:
     - naigation.indexes
     - navigation.instant.progress
     - navigation.tracking
-
     - search.suggest
     - search.highlight
     - search.share
@@ -46,11 +46,24 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
-
+  - attr_list
+  - md_in_html
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 nav:
   - Home: index.md
-  - Onboarding: onboarding/intro.md
-  - Politicas: politicas/intro.md
-  - Manuais: manual/intro.md
+  - Onboarding:
+    - "Intro": onboarding/intro.md
+    - "Monstros": onboarding/monstro_ob.md
+  - Politicas:
+    - "Intro": politicas/intro.md
+    - "Governanca": politicas/governanca.md
+  - Manuais:
+    - "Intro": manual/intro.md
+    - "Mapa Conhecimento": manual/mapa_conhecimento.md
   - Metodos: metodos/intro.md
   - Wiki: database/intro.md
+  - Plataforma: 
+    - "Home": plataforma/intro.md
